@@ -129,9 +129,9 @@ my $cleanup = join("\n",
 		   # CERN specific :)
 		   "rm-rf /root/customize.log",
     );
-$cmd = "echo '$cleanup' | /usr/bin/guestfish --rw -i -a $outfile";
-print STDOUT "[INFO] Now running \"$cmd\"\n";
-system ($cmd) == 0 or exit $?;
+#$cmd = "echo '$cleanup' | /usr/bin/guestfish --rw -i -a $outfile";
+#print STDOUT "[INFO] Now running \"$cmd\"\n";
+#system ($cmd) == 0 or exit $?;
 
 print STDOUT "[INFO] Note: you can use \"guestfish\" to inspect the image:\n";
 print STDOUT "[INFO]        guestfish --rw -i -a $outfile\n\n";
